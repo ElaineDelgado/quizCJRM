@@ -1,0 +1,95 @@
+.app-header {
+  border-bottom: 2px solid rgba(18, 247, 186, 0.33);
+}
+
+body {
+  background: linear-gradient(to bottom right, #6600cc 5%, #cc00ff 81%) no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  padding: 25px 0;
+}
+
+h1 {
+  font-size: 48px; 
+  text-align: center;
+} 
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-check-input:checked {
+  background-color: #44ffdd;
+  border-color: #0dfde9;
+}
+
+.row.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+hr {
+  background-color: rgb(109, 247, 210);
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  margin: 25px auto;
+}
+
+.img-container {
+  display: flex;  
+}
+
+.img-container img{
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-enviar, 
+.btn-voltar {
+  background: linear-gradient(to bottom right, #00ffcc 0%, #0099ff 100%);
+  margin-top: 40px;
+  color: #fff;
+}
+
+.btn-enviar:hover,
+.btn-voltar:hover {
+  opacity: .8;
+} 
+
+.btn-voltar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.div-answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-answer p {
+  font-size: 24px; 
+  color: #ffffff;
+  margin-top: 20px;
+}
