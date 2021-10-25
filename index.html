@@ -16,6 +16,14 @@
     <h1 class="text-light my-4">Anime Quiz</h1>
   </header>
 
+  <div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+      <p>
+        Você acertou <span class="text-primary display-4 p-3">0%</span> do quiz!
+      </p>
+    </div>
+  </div>
+
   <main class="quiz-container">
     <div class="container">
       <h2 class="my-5 text-white">Quantos nomes de animes você consegue acertar?</h2>
@@ -35,15 +43,21 @@
                   </label>
                 </div>
                 <div class="form-check py-3">
-                  <input class="form-check-input" type="radio" name="anime1" id="anime1-2" value="3">
+                  <input class="form-check-input" type="radio" name="anime1" id="anime1-2" value="2">
                   <label class="form-check-label" for="anime1-2">
                     Tsubasa Reservoir Chronicles
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime1" id="anime1-3" value="2">
+                  <input class="form-check-input" type="radio" name="anime1" id="anime1-3" value="3">
                   <label class="form-check-label" for="anime1-3">
                     Card Captor Sakura
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime1" id="anime1-4" value="4">
+                  <label class="form-check-label" for="anime1-4">
+                    Sailor Moon
                   </label>
                 </div>
               </div>
@@ -56,21 +70,27 @@
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime2" id="anime2-1" value="3" checked>
+                  <input class="form-check-input" type="radio" name="anime2" id="anime2-1" value="1" checked>
                   <label class="form-check-label" for="anime2-1">
-                    Saint Seiya - The Lost Canvas
+                    Saint Seiya - Next Dimension
                   </label>
                 </div>
                 <div class="form-check py-3">
                   <input class="form-check-input" type="radio" name="anime2" id="anime2-2" value="2">
                   <label class="form-check-label" for="anime2-2">
-                    Saint Seiya - Next Dimension
+                    Tenkuu Senki Shurato
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime2" id="anime2-3" value="1">
+                  <input class="form-check-input" type="radio" name="anime2" id="anime2-3" value="3">
                   <label class="form-check-label" for="anime2-3">
-                    Tenkuu Senki Shurato
+                    Kakegurui
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime2" id="anime2-4" value="4">
+                  <label class="form-check-label" for="anime2-4">
+                    Saint Seiya - The Lost Canvas
                   </label>
                 </div>
               </div>
@@ -106,6 +126,12 @@
                     Shingeki No Kyojin
                   </label>
                 </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime3" id="anime3-4" value="4">
+                  <label class="form-check-label" for="anime3-4">
+                    Berserk
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -116,21 +142,27 @@
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime4" value="1" id="anime4-1" checked>
+                  <input class="form-check-input" type="radio" name="anime4" id="anime4-1" value="1" checked>
                   <label class="form-check-label" for="anime4-1">
-                    Yu YU Hakusho
-                  </label>
-                </div>
-                <div class="form-check py-2">
-                  <input class="form-check-input" type="radio" name="anime4" id="anime4-2" value="3">
-                  <label class="form-check-label" for="anime4-2">
                     Hunter x Hunter
                   </label>
                 </div>
+                <div class="form-check py-2">
+                  <input class="form-check-input" type="radio" name="anime4" id="anime4-2" value="2">
+                  <label class="form-check-label" for="anime4-2">
+                    Yu YU Hakusho
+                  </label>
+                </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime4" id="anime4-3" value="2">
+                  <input class="form-check-input" type="radio" name="anime4" id="anime4-3" value="3">
                   <label class="form-check-label" for="anime4-3">
-                    Jibaku-kun
+                    Kyousougiga
+                  </label>
+                </div>
+                <div class="form-check py-2">
+                  <input class="form-check-input" type="radio" name="anime4" id="anime4-4" value="4">
+                  <label class="form-check-label" for="anime4-4">
+                    Boku Dake Ga Inai Machi
                   </label>
                 </div>
               </div>
@@ -154,7 +186,7 @@
                     Vinland Saga
                   </label>
                 </div>
-                <div class="form-check py-2">
+                <div class="form-check py-3">
                   <input class="form-check-input" type="radio" name="anime5" id="anime5-2" value="2">
                   <label class="form-check-label" for="anime5-2">
                     Saiki Kusuo no Psi-Nan
@@ -166,30 +198,42 @@
                     Death Note
                   </label>
                 </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime5" id="anime5-4" value="4">
+                  <label class="form-check-label" for="anime5-4">
+                    Hokuto no Ken
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <hr>
         <div class="card mb-3">
-          <div class="row">
+          <div class="row wrap-reverse">
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime6" id="anime6-1" value="2" checked>
+                  <input class="form-check-input" type="radio" name="anime6" id="anime6-1" value="1" checked>
                   <label class="form-check-label" for="anime6-1">
                     Miss Kobayashi’s Dragon Maid
                   </label>
                 </div>
-                <div class="form-check py-2">
-                  <input class="form-check-input" type="radio" name="anime6" id="anime6-2" value="3">
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime6" id="anime6-2" value="2">
                   <label class="form-check-label" for="anime6-2">
                     Kaichou Wa Maid Sama
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime6" id="anime6-3" value="1">
+                  <input class="form-check-input" type="radio" name="anime6" id="anime6-3" value="3">
                   <label class="form-check-label" for="anime6-3">
+                    Re:Zero -Starting Life in Another World
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime6" id="anime6-4" value="4">
+                  <label class="form-check-label" for="anime6-4">
                     Re:Zero -Starting Life in Another World
                   </label>
                 </div>
@@ -209,21 +253,27 @@
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime7" id="anime7-1" value="3" checked>
+                  <input class="form-check-input" type="radio" name="anime7" id="anime7-1" value="1" checked>
                   <label class="form-check-label" for="anime7-1">
-                    Another
+                    Yōjo Senki
                   </label>
                 </div>
-                <div class="form-check py-2">
+                <div class="form-check py-3">
                   <input class="form-check-input" type="radio" name="anime7" id="anime7-2" value="2">
                   <label class="form-check-label" for="anime7-2">
                     Shigatsu wa Kimi no Uso
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime7" id="anime7-3" value="1">
+                  <input class="form-check-input" type="radio" name="anime7" id="anime7-3" value="3">
                   <label class="form-check-label" for="anime7-3">
                     Kimi ni Todoke
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime7" id="anime7-4" value="4">
+                  <label class="form-check-label" for="anime7-4">
+                    Another
                   </label>
                 </div>
               </div>
@@ -238,18 +288,24 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="anime8" value="1" id="anime8-1" checked>
                   <label class="form-check-label" for="anime8-1">
-                    Rurouni Kenshin
-                  </label>
-                </div>
-                <div class="form-check py-2">
-                  <input class="form-check-input" type="radio" name="anime8" id="anime8-2" value="3">
-                  <label class="form-check-label" for="anime8-2">
                     Kimetsu No Yaiba
                   </label>
                 </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime8" id="anime8-2" value="2">
+                  <label class="form-check-label" for="anime8-2">
+                    Rurouni Kenshin
+                  </label>
+                </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime8" id="anime8-3" value="2">
+                  <input class="form-check-input" type="radio" name="anime8" id="anime8-3" value="3">
                   <label class="form-check-label" for="anime8-3">
+                    Hajime No Ippo
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime8" id="anime8-4" value="4">
+                  <label class="form-check-label" for="anime8-4">
                     Hajime No Ippo
                   </label>
                 </div>
@@ -269,13 +325,13 @@
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime9" id="anime9-1" value="2" checked>
+                  <input class="form-check-input" type="radio" name="anime9" id="anime9-1" value="1" checked>
                   <label class="form-check-label" for="anime9-1">
                     Tanaka-kun wa Itsumo Kedaruge
                   </label>
                 </div>
-                <div class="form-check py-2">
-                  <input class="form-check-input" type="radio" name="anime9" id="anime9-2" value="1">
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime9" id="anime9-2" value="2">
                   <label class="form-check-label" for="anime9-2">
                     Shokugeki no Souma
                   </label>
@@ -284,6 +340,12 @@
                   <input class="form-check-input" type="radio" name="anime9" id="anime9-3" value="3">
                   <label class="form-check-label" for="anime9-3">
                     Jibaku-kun
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime9" id="anime9-4" value="4">
+                  <label class="form-check-label" for="anime9-4">
+                    Rogu Horaizun
                   </label>
                 </div>
               </div>
@@ -296,21 +358,27 @@
             <div class="col-md-6 d-flex">
               <div class="card-body">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime10" value="1" id="anime10-1" checked>
+                  <input class="form-check-input" type="radio" name="anime10" id="anime10-1" value="1" checked>
                   <label class="form-check-label" for="anime10-1">
-                    .hack//Luminality 
+                    .hack//Luminality
                   </label>
                 </div>
-                <div class="form-check py-2">
-                  <input class="form-check-input" type="radio" name="anime10" id="anime10-2" value="3">
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime10" id="anime10-2" value="2">
                   <label class="form-check-label" for="anime10-2">
-                    .hack//Tasogare no Udewa Densetsu
+                    .hack//SIGN
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="anime10" id="anime10-3" value="2">
+                  <input class="form-check-input" type="radio" name="anime10" id="anime10-3" value="3">
                   <label class="form-check-label" for="anime10-3">
-                    .hack//SIGN 
+                    .hack//Tasogare no Udewa Densetsu
+                  </label>
+                </div>
+                <div class="form-check py-3">
+                  <input class="form-check-input" type="radio" name="anime10" id="anime10-4" value="4">
+                  <label class="form-check-label" for="anime10-4">
+                    .hack//NASA
                   </label>
                 </div>
               </div>
@@ -327,14 +395,6 @@
         </div>
       </form>
     </div>
-
-    <!-- POPUP RESPOSTA -->
-    <section class="popup-container">
-      <div class="div-answer pt-4">
-        <!-- AQUI ENTRA A RESPOSTA -->
-        <a class="btn btn-voltar my-5" href="#quiz-start">Voltar ao Topo!</a>
-      </div>
-    </section>
   </main>
 
   <script src="./app.js"></script>
