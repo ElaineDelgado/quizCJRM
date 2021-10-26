@@ -20,11 +20,16 @@ div.result {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0;
-  color: #44ffdd;
+  color: #cc00ff;
+  display: inline-block;
+  padding: 10px 15px 15px 15px;
+  border: 4px solid #44ffdd;
+  border-radius: 5px;
+  background-color: white;
 }
 
 .container.lead p span {
-  color: #44ffdd;
+  color: #cc00ff;
 }
 
 h1 {
@@ -80,31 +85,15 @@ hr {
   justify-content: center;
 }
 
-.btn-enviar {
+.btn-enviar,
+.btn-new-game {
   background: #44ffdd;
-  color: #4c4c4c;
+  color: #272727;
   font-weight: bold;
   margin-top: 40px;
 }
 
 .btn-enviar:hover,
-.btn-voltar:hover {
+.btn-new-game:hover {
   opacity: .8;
 } 
-
-.btn-voltar a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.div-answer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.div-answer p {
-  font-size: 24px; 
-  color: #ffffff;
-  margin-top: 20px;
-}

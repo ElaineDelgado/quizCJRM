@@ -1,6 +1,6 @@
 const form = document.querySelector('form.quiz-form')
 const finalResult = document.querySelector('div.result')
-
+const btnNewGame = document.querySelector('button.btn-new-game')
 
 const correctAnswers = ['2', '4', '3', '1', '3', '2', '4', '1', '3', '2']
 
@@ -41,6 +41,14 @@ const totalScorePoints = (event) => {
     finalResult.querySelector('span').textContent = `${counter}`
     counter++
   }, 10)
+  
+  form.reset()   
+}
+
+const startsNewQuiz = () => {
+  finalResult.classList.add('d-none')
+  totalScore = 0
 }
 
 form.addEventListener('submit', totalScorePoints) 
+btnNewGame.addEventListener('click', startsNewQuiz) 
