@@ -1,52 +1,58 @@
 const form = document.querySelector('form.quiz-form')
-const finalResult = document.querySelector('div.result')
+const finalScoreContainer = document.querySelector('div.final-score-container')
 const btnNewQuiz = document.querySelector('button.btn-new-quiz')
 
 const correctAnswers = ['2', '4', '3', '1', '3', '2', '4', '1', '3', '2']
 
+const getUserAnswers = () => {
+  let userAnswers = []
+  correctAnswers.forEach((_, index) => {
+    const userAnswer = form[`anime${index + 1}`].value 
+    userAnswers.push(userAnswer)
+  })
+
+  return userAnswers
+}
+
 let totalScore = 0
 
-const totalScorePoints = (event) => {
-  event.preventDefault()
-
-  const userAnswers = [
-    form.anime1.value,
-    form.anime2.value,
-    form.anime3.value,
-    form.anime4.value,
-    form.anime5.value,
-    form.anime6.value,
-    form.anime7.value,
-    form.anime8.value,
-    form.anime9.value,
-    form.anime10.value,
-  ]
-
+const calculateUserScore = (userAnswers) => {
   userAnswers.forEach((userAnswer, index) => {
-    if (userAnswer === correctAnswers[index]) {
+    const isUserAnswerCorrect = userAnswer === correctAnswers[index]
+    if (isUserAnswerCorrect) {
       totalScore += 10
     }
   })
+}
 
-  scrollTo(0, 0)  
+const showFinalScore = () => {
+  scrollTo(0, 0)
+  finalScoreContainer.classList.remove('d-none')
+}
 
-  finalResult.classList.remove('d-none')
-
+const animateFinalScore = () => {
   let counter = 0
-
   const timer = setInterval(() => {
     if (counter === totalScore) {
       clearInterval(timer)
     }
-    finalResult.querySelector('span').textContent = `${counter}`
-    counter++
+    finalScoreContainer.querySelector('span').textContent = `${counter++}`
   }, 10)
+}
 
+const totalScorePoints = (event) => {
+  event.preventDefault()
+
+  const userAnswers = getUserAnswers()
+  calculateUserScore(userAnswers)
+
+  showFinalScore()
+  animateFinalScore()
   form.reset()
 }
 
 const startsNewQuiz = () => {
-  finalResult.classList.add('d-none')
+  finalScoreContainer.classList.add('d-none')
   totalScore = 0
 }
 

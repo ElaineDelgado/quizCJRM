@@ -77,9 +77,10 @@ hr {
   display: flex;  
 }
 
-.img-container img{
+.img-container img {
   display: block;
   max-width: 200px;
+  max-height: 200px;
   height: auto;
 }
 
