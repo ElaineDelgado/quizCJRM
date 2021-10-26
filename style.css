@@ -86,7 +86,7 @@ hr {
 }
 
 .btn-enviar,
-.btn-new-game {
+.btn-new-quiz {
   background: #44ffdd;
   color: #272727;
   font-weight: bold;
@@ -94,6 +94,6 @@ hr {
 }
 
 .btn-enviar:hover,
-.btn-new-game:hover {
+.btn-new-quiz:hover {
   opacity: .8;
 } 

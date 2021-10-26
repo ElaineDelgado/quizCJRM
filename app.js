@@ -1,13 +1,13 @@
 const form = document.querySelector('form.quiz-form')
 const finalResult = document.querySelector('div.result')
-const btnNewGame = document.querySelector('button.btn-new-game')
+const btnNewQuiz = document.querySelector('button.btn-new-quiz')
 
 const correctAnswers = ['2', '4', '3', '1', '3', '2', '4', '1', '3', '2']
 
 let totalScore = 0
 
 const totalScorePoints = (event) => {
-  event.preventDefault()  
+  event.preventDefault()
 
   const userAnswers = [
     form.anime1.value,
@@ -28,8 +28,8 @@ const totalScorePoints = (event) => {
     }
   })
 
-  scrollTo(0, 0) 
-  
+  scrollTo(0, 0)  
+
   finalResult.classList.remove('d-none')
 
   let counter = 0
@@ -41,8 +41,8 @@ const totalScorePoints = (event) => {
     finalResult.querySelector('span').textContent = `${counter}`
     counter++
   }, 10)
-  
-  form.reset()   
+
+  form.reset()
 }
 
 const startsNewQuiz = () => {
@@ -50,5 +50,5 @@ const startsNewQuiz = () => {
   totalScore = 0
 }
 
-form.addEventListener('submit', totalScorePoints) 
-btnNewGame.addEventListener('click', startsNewQuiz) 
+form.addEventListener('submit', totalScorePoints)
+btnNewQuiz.addEventListener('click', startsNewQuiz)
