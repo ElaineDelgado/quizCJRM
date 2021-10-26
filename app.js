@@ -28,31 +28,19 @@ const totalScorePoints = (event) => {
     }
   })
 
-  scrollTo(0, 0) //rola a pagina para o eixo x e y,ambos posicao zero
+  scrollTo(0, 0) 
   
   finalResult.classList.remove('d-none')
 
-  /**
-   * a quantidade de vezes q a funcao de callback inserida no setInterval vai ser executada
-   * vai ser a mesma do counter, ou seja, se o counter final for 50, a funcao do setInterval 
-   * vai ser executada 50 vezes pra q a nimacao dos numeros aconteça
-   */
   let counter = 0
 
   const timer = setInterval(() => {
     if (counter === totalScore) {
       clearInterval(timer)
     }
-    finalResult.querySelector('span').textContent = `${counter}%`
+    finalResult.querySelector('span').textContent = `${counter}`
     counter++
   }, 10)
-  console.log(counter)
 }
 
-form.addEventListener('submit', totalScorePoints) // acertando todas o resutado é 99%
-
-
-
-// a funcao setInterval gera um id q está armazenado na const timer
-// console.log(timer)  
-//1 , o id setInterval , então passamos a timer no argumento do clearInterval
+form.addEventListener('submit', totalScorePoints) 

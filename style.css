@@ -8,8 +8,23 @@ body {
   position: relative;
 }
 
+div.result {
+  background-color: transparent;
+}
+
 .container {
   padding: 25px 0;
+}
+
+.container.lead p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #44ffdd;
+}
+
+.container.lead p span {
+  color: #44ffdd;
 }
 
 h1 {
@@ -65,11 +80,11 @@ hr {
   justify-content: center;
 }
 
-.btn-enviar, 
-.btn-voltar {
-  background: linear-gradient(to bottom right, #00ffcc 0%, #0099ff 100%);
+.btn-enviar {
+  background: #44ffdd;
+  color: #4c4c4c;
+  font-weight: bold;
   margin-top: 40px;
-  color: #fff;
 }
 
 .btn-enviar:hover,
