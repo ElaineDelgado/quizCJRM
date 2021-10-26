@@ -48,6 +48,10 @@ form {
   align-items: center;
 }
 
+.form-check-input, .form-check-label {
+  cursor: pointer;
+}
+
 .form-check-input:checked {
   background-color: #44ffdd;
   border-color: #0dfde9;
