@@ -4,15 +4,8 @@ const btnNewQuiz = document.querySelector('button.btn-new-quiz')
 
 const correctAnswers = ['2', '4', '3', '1', '3', '2', '4', '1', '3', '2']
 
-const getUserAnswers = () => {
-  let userAnswers = []
-  correctAnswers.forEach((_, index) => {
-    const userAnswer = form[`anime${index + 1}`].value 
-    userAnswers.push(userAnswer)
-  })
-
-  return userAnswers
-}
+const getUserAnswers = () =>  correctAnswers.map((_, index) =>
+  form[`anime${index + 1}`].value)
 
 let totalScore = 0
 
@@ -44,8 +37,8 @@ const totalScorePoints = (event) => {
   event.preventDefault()
 
   const userAnswers = getUserAnswers()
+  
   calculateUserScore(userAnswers)
-
   showFinalScore()
   animateFinalScore()
   form.reset()
